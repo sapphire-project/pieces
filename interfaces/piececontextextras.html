@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StoreOptionsPostLoadHandler | @sapphire/framework</title>
+	<title>PieceContextExtras | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="storeoptionspostloadhandler.html">StoreOptionsPostLoadHandler</a>
+					<a href="piececontextextras.html">PieceContextExtras</a>
 				</li>
 			</ul>
-			<h1>Interface StoreOptionsPostLoadHandler&lt;T&gt;</h1>
+			<h1>Interface PieceContextExtras</h1>
 		</div>
 	</div>
 </header>
@@ -65,59 +65,23 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The post-load handler.</p>
+						<p>Represents the data from <a href="piececontext.html#extras">PieceContext.extras</a> and may be used for dependency injection.
+							Libraries can provide strict typing by augmenting this module, check
+							<a href="https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation" class="external">module augmentation</a>
+						for more information.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>T<span class="tsd-signature-symbol">: </span><a href="../classes/piece.html" class="tsd-signature-type">Piece</a></h4>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StoreOptionsPostLoadHandler</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, piece<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L98">src/lib/Store.ts:98</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>The post-load handler.</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
+						<span class="tsd-signature-symbol">{}</span>
+						<ul class="tsd-hierarchy">
 							<li>
-								<h5>store: <a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The store that holds the piece.</p>
-								</div>
-							</li>
-							<li>
-								<h5>piece: <span class="tsd-signature-type">T</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>The piece that was loaded.</p>
-								</div>
+								<span class="target">PieceContextExtras</span>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -165,9 +129,13 @@
 					<li class=" tsd-kind-interface">
 						<a href="piececontext.html" class="tsd-kind-icon">Piece<wbr>Context</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="piececontextextras.html" class="tsd-kind-icon">Piece<wbr>Context<wbr>Extras</a>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="pieceoptions.html" class="tsd-kind-icon">Piece<wbr>Options</a>
 					</li>
@@ -183,13 +151,9 @@
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-has-type-parameter">
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptionspostloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Post<wbr>Load<wbr>Handler</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptionspreloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Pre<wbr>Load<wbr>Hook</a>
 					</li>

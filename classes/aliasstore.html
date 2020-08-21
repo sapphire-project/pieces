@@ -105,7 +105,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#constructor-1" class="tsd-kind-icon">Constructor</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="aliasstore.html#aliases" class="tsd-kind-icon">aliases</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#context" class="tsd-kind-icon">context</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#filterhook" class="tsd-kind-icon">filter<wbr>Hook</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#loadhook" class="tsd-kind-icon">load<wbr>Hook</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
@@ -117,6 +116,12 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="aliasstore.html#default" class="tsd-kind-icon">default</a></li>
 							</ul>
 						</section>
+						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="aliasstore.html#extras" class="tsd-kind-icon">extras</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
@@ -124,6 +129,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="aliasstore.html#clear" class="tsd-kind-icon">clear</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#clone" class="tsd-kind-icon">clone</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#concat" class="tsd-kind-icon">concat</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="aliasstore.html#construct" class="tsd-kind-icon">construct</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="aliasstore.html#delete" class="tsd-kind-icon">delete</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#difference" class="tsd-kind-icon">difference</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="aliasstore.html#each" class="tsd-kind-icon">each</a></li>
@@ -179,7 +185,7 @@
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#constructor">constructor</a></p>
 								<p>Overrides Collection.[&#x27;constructor&#x27;]</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L180">src/lib/Store.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L179">src/lib/Store.ts:179</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -217,7 +223,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#constructor-1">Constructor</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L172">src/lib/Store.ts:172</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L172">src/lib/Store.ts:172</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -227,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Collection&lt;string, T&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/AliasStore.ts#L12">src/lib/AliasStore.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/AliasStore.ts#L12">src/lib/AliasStore.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -237,24 +243,13 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="context" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> context</h3>
-					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">unknown</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#context">context</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L174">src/lib/Store.ts:174</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="filterhook" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> filter<wbr>Hook</h3>
 					<div class="tsd-signature tsd-kind-icon">filter<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="../interfaces/storeoptionsfilterhook.html" class="tsd-signature-type">StoreOptionsFilterHook</a></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#filterhook">filterHook</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L175">src/lib/Store.ts:175</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L174">src/lib/Store.ts:174</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -265,7 +260,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#loadhook">loadHook</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L177">src/lib/Store.ts:177</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L176">src/lib/Store.ts:176</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -276,7 +271,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#onerror">onError</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L180">src/lib/Store.ts:180</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L179">src/lib/Store.ts:179</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -287,7 +282,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#onpostload">onPostLoad</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L178">src/lib/Store.ts:178</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L177">src/lib/Store.ts:177</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -298,7 +293,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#onunload">onUnload</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L179">src/lib/Store.ts:179</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L178">src/lib/Store.ts:178</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -309,7 +304,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#paths">paths</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L173">src/lib/Store.ts:173</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L173">src/lib/Store.ts:173</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -320,7 +315,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#preloadhook">preloadHook</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L176">src/lib/Store.ts:176</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L175">src/lib/Store.ts:175</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -345,6 +340,32 @@
 							<li>Defined in node_modules/@discordjs/collection/dist/index.d.ts:17</li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="extras" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> extras</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> extras<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/piececontextextras.html" class="tsd-signature-type">PieceContextExtras</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#extras">extras</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L275">src/lib/Store.ts:275</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The extras to be passed to the constructor of all pieces.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/piececontextextras.html" class="tsd-signature-type">PieceContextExtras</a></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -462,6 +483,50 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="construct" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> construct</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">construct<span class="tsd-signature-symbol">(</span>Ctor<span class="tsd-signature-symbol">: </span><a href="../globals.html#iloaderresultentry" class="tsd-signature-type">ILoaderResultEntry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#construct">construct</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L298">src/lib/Store.ts:298</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Constructs a <a href="piece.html">Piece</a> instance.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>Ctor: <a href="../globals.html#iloaderresultentry" class="tsd-signature-type">ILoaderResultEntry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The <a href="piece.html">Piece</a>&#39;s constructor used to build the instance.</p>
+									</div>
+								</li>
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The path of the file.</p>
+									</div>
+								</li>
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The name of the piece.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1413,7 +1478,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="store.html">Store</a>.<a href="store.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/AliasStore.ts#L18">src/lib/AliasStore.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/AliasStore.ts#L18">src/lib/AliasStore.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1480,7 +1545,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="store.html">Store</a>.<a href="store.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/AliasStore.ts#L45">src/lib/AliasStore.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/AliasStore.ts#L45">src/lib/AliasStore.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1655,7 +1720,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#load">load</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L219">src/lib/Store.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L217">src/lib/Store.ts:217</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1688,7 +1753,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#loadall">loadAll</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L244">src/lib/Store.ts:244</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L241">src/lib/Store.ts:241</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2228,7 +2293,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#registerpath">registerPath</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L209">src/lib/Store.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L207">src/lib/Store.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2267,7 +2332,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#resolve">resolve</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/Store.ts#L264">src/lib/Store.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/Store.ts#L261">src/lib/Store.ts:261</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2739,7 +2804,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="store.html">Store</a>.<a href="store.html#unload">unload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/AliasStore.ts#L27">src/lib/AliasStore.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/51033e0/src/lib/AliasStore.ts#L27">src/lib/AliasStore.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2794,9 +2859,6 @@
 								<a href="aliasstore.html#aliases" class="tsd-kind-icon">aliases</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="aliasstore.html#context" class="tsd-kind-icon">context</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="aliasstore.html#filterhook" class="tsd-kind-icon">filter<wbr>Hook</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
@@ -2823,6 +2885,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="aliasstore.html#default" class="tsd-kind-icon">default</a>
 							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="aliasstore.html#extras" class="tsd-kind-icon">extras</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="aliasstore.html#array" class="tsd-kind-icon">array</a>
 							</li>
@@ -2834,6 +2899,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="aliasstore.html#concat" class="tsd-kind-icon">concat</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="aliasstore.html#construct" class="tsd-kind-icon">construct</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="aliasstore.html#delete" class="tsd-kind-icon">delete</a>
@@ -2972,6 +3040,9 @@
 						<a href="../interfaces/piececontext.html" class="tsd-kind-icon">Piece<wbr>Context</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/piececontextextras.html" class="tsd-kind-icon">Piece<wbr>Context<wbr>Extras</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/pieceoptions.html" class="tsd-kind-icon">Piece<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
@@ -3012,6 +3083,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="../globals.html#iloaderresult" class="tsd-kind-icon">ILoader<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#iloaderresultentry" class="tsd-kind-icon">ILoader<wbr>Result<wbr>Entry</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a>
