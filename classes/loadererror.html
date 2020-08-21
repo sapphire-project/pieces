@@ -110,7 +110,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/errors/LoaderError.ts#L2">src/lib/errors/LoaderError.ts:2</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/errors/LoaderError.ts#L2">src/lib/errors/LoaderError.ts:2</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -168,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/errors/LoaderError.ts#L2">src/lib/errors/LoaderError.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/errors/LoaderError.ts#L2">src/lib/errors/LoaderError.ts:2</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -237,10 +237,13 @@
 						<a href="../interfaces/aliaspieceoptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ifilter.html" class="tsd-kind-icon">IFilter</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iloader.html" class="tsd-kind-icon">ILoader</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/ipiece.html" class="tsd-kind-icon">IPiece</a>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/moduledata.html" class="tsd-kind-icon">Module<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/piececontext.html" class="tsd-kind-icon">Piece<wbr>Context</a>
@@ -254,6 +257,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
 					</li>
@@ -266,26 +272,32 @@
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/storeoptionsunloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>UnLoad<wbr>Handler</a>
 					</li>
-					<li class=" tsd-kind-type-alias">
+					<li class=" tsd-kind-type-alias tsd-is-private">
 						<a href="../globals.html#arr" class="tsd-kind-icon">Arr</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#awaited" class="tsd-kind-icon">Awaited</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#constructor" class="tsd-kind-icon">Constructor</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#ctor" class="tsd-kind-icon">Ctor</a>
 					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#filterresult" class="tsd-kind-icon">Filter<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#iloaderresult" class="tsd-kind-icon">ILoader<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="../globals.html#getname" class="tsd-kind-icon">get<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function">
+					<li class=" tsd-kind-function tsd-is-private">
 						<a href="../globals.html#isclass" class="tsd-kind-icon">is<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="../globals.html#loadjavascript" class="tsd-kind-icon">Load<wbr>Java<wbr>Script</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="../globals.html#loadmultiple" class="tsd-kind-icon">Load<wbr>Multiple</a>
@@ -313,8 +325,8 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>

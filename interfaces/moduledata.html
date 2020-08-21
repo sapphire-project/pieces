@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>IPiece | @sapphire/framework</title>
+	<title>ModuleData | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,29 +52,28 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="ipiece.html">IPiece</a>
+					<a href="moduledata.html">ModuleData</a>
 				</li>
 			</ul>
-			<h1>Interface IPiece&lt;T&gt;</h1>
+			<h1>Interface ModuleData</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>T<span class="tsd-signature-symbol">: </span><a href="../classes/piece.html" class="tsd-signature-type">Piece</a></h4>
-					</li>
-				</ul>
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The module data information.</p>
+					</div>
+				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">IPiece</span>
+						<span class="target">ModuleData</span>
 					</li>
 				</ul>
 			</section>
@@ -83,41 +82,46 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-interface"><a href="ipiece.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="moduledata.html#extension" class="tsd-kind-icon">extension</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="moduledata.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-interface">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">new IPiece<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="piececontext.html" class="tsd-signature-type">PieceContext</a>, options<span class="tsd-signature-symbol">?: </span><a href="pieceoptions.html" class="tsd-signature-type">PieceOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/strategies/ILoader.ts#L4">src/lib/strategies/ILoader.ts:4</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>context: <a href="piececontext.html" class="tsd-signature-type">PieceContext</a></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> options: <a href="pieceoptions.html" class="tsd-signature-type">PieceOptions</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="extension" class="tsd-anchor"></a>
+					<h3>extension</h3>
+					<div class="tsd-signature tsd-kind-icon">extension<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/strategies/filters/IFilter.ts#L13">src/lib/strategies/filters/IFilter.ts:13</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The extension of the module.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/strategies/filters/IFilter.ts#L8">src/lib/strategies/filters/IFilter.ts:8</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name of the module.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -150,15 +154,21 @@
 						<a href="aliaspieceoptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="ifilter.html" class="tsd-kind-icon">IFilter</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="iloader.html" class="tsd-kind-icon">ILoader</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-has-type-parameter">
-						<a href="ipiece.html" class="tsd-kind-icon">IPiece</a>
+					<li class="current tsd-kind-interface">
+						<a href="moduledata.html" class="tsd-kind-icon">Module<wbr>Data</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-interface">
-								<a href="ipiece.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="moduledata.html#extension" class="tsd-kind-icon">extension</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="moduledata.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
@@ -176,6 +186,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
 					</li>
@@ -188,26 +201,32 @@
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptionsunloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>UnLoad<wbr>Handler</a>
 					</li>
-					<li class=" tsd-kind-type-alias">
+					<li class=" tsd-kind-type-alias tsd-is-private">
 						<a href="../globals.html#arr" class="tsd-kind-icon">Arr</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#awaited" class="tsd-kind-icon">Awaited</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#constructor" class="tsd-kind-icon">Constructor</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#ctor" class="tsd-kind-icon">Ctor</a>
 					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#filterresult" class="tsd-kind-icon">Filter<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#iloaderresult" class="tsd-kind-icon">ILoader<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="../globals.html#getname" class="tsd-kind-icon">get<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function">
+					<li class=" tsd-kind-function tsd-is-private">
 						<a href="../globals.html#isclass" class="tsd-kind-icon">is<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="../globals.html#loadjavascript" class="tsd-kind-icon">Load<wbr>Java<wbr>Script</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="../globals.html#loadmultiple" class="tsd-kind-icon">Load<wbr>Multiple</a>
@@ -235,8 +254,8 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>

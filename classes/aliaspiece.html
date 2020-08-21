@@ -62,6 +62,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>The piece to be stored in <a href="aliasstore.html">AliasStore</a> instances.</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -93,6 +100,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliaspiece.html#enabled" class="tsd-kind-icon">enabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliaspiece.html#name" class="tsd-kind-icon">name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliaspiece.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliaspiece.html#store" class="tsd-kind-icon">store</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,7 +119,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="piece.html">Piece</a>.<a href="piece.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/AliasPiece.ts#L8">src/lib/AliasPiece.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/AliasPiece.ts#L18">src/lib/AliasPiece.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -136,9 +144,14 @@
 					<div class="tsd-signature tsd-kind-icon">aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/AliasPiece.ts#L8">src/lib/AliasPiece.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/AliasPiece.ts#L18">src/lib/AliasPiece.ts:18</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The aliases for the piece.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="context" class="tsd-anchor"></a>
@@ -147,9 +160,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="piece.html">Piece</a>.<a href="piece.html#context">context</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Piece.ts#L12">src/lib/Piece.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Piece.ts#L48">src/lib/Piece.ts:48</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The context given by the store.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="enabled" class="tsd-anchor"></a>
@@ -158,9 +176,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="piece.html">Piece</a>.<a href="piece.html#enabled">enabled</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Piece.ts#L15">src/lib/Piece.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Piece.ts#L68">src/lib/Piece.ts:68</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether or not the piece is enabled.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="name" class="tsd-anchor"></a>
@@ -169,9 +192,14 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="piece.html">Piece</a>.<a href="piece.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Piece.ts#L14">src/lib/Piece.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Piece.ts#L63">src/lib/Piece.ts:63</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name of the piece.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="path" class="tsd-anchor"></a>
@@ -180,9 +208,30 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="piece.html">Piece</a>.<a href="piece.html#path">path</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Piece.ts#L13">src/lib/Piece.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Piece.ts#L58">src/lib/Piece.ts:58</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The path to the piece&#39;s file.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="store" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> store</h3>
+					<div class="tsd-signature tsd-kind-icon">store<span class="tsd-signature-symbol">:</span> <a href="store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><a href="piece.html" class="tsd-signature-type">Piece</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="piece.html">Piece</a>.<a href="piece.html#store">store</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Piece.ts#L53">src/lib/Piece.ts:53</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The store that contains the piece.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -219,6 +268,9 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="aliaspiece.html#path" class="tsd-kind-icon">path</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="aliaspiece.html#store" class="tsd-kind-icon">store</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -239,10 +291,13 @@
 						<a href="../interfaces/aliaspieceoptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ifilter.html" class="tsd-kind-icon">IFilter</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="../interfaces/iloader.html" class="tsd-kind-icon">ILoader</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/ipiece.html" class="tsd-kind-icon">IPiece</a>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/moduledata.html" class="tsd-kind-icon">Module<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/piececontext.html" class="tsd-kind-icon">Piece<wbr>Context</a>
@@ -256,6 +311,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
 					</li>
@@ -268,26 +326,32 @@
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/storeoptionsunloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>UnLoad<wbr>Handler</a>
 					</li>
-					<li class=" tsd-kind-type-alias">
+					<li class=" tsd-kind-type-alias tsd-is-private">
 						<a href="../globals.html#arr" class="tsd-kind-icon">Arr</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#awaited" class="tsd-kind-icon">Awaited</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#constructor" class="tsd-kind-icon">Constructor</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#ctor" class="tsd-kind-icon">Ctor</a>
 					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#filterresult" class="tsd-kind-icon">Filter<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#iloaderresult" class="tsd-kind-icon">ILoader<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="../globals.html#getname" class="tsd-kind-icon">get<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function">
+					<li class=" tsd-kind-function tsd-is-private">
 						<a href="../globals.html#isclass" class="tsd-kind-icon">is<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="../globals.html#loadjavascript" class="tsd-kind-icon">Load<wbr>Java<wbr>Script</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="../globals.html#loadmultiple" class="tsd-kind-icon">Load<wbr>Multiple</a>
@@ -315,8 +379,8 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>

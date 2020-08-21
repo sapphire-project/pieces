@@ -96,12 +96,13 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#context" class="tsd-kind-icon">context</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#filterhook" class="tsd-kind-icon">filter<wbr>Hook</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#loadhook" class="tsd-kind-icon">load<wbr>Hook</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#onpreload" class="tsd-kind-icon">on<wbr>Preload</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#paths" class="tsd-kind-icon">paths</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="storeoptions.html#preloadhook" class="tsd-kind-icon">preload<wbr>Hook</a></li>
 							</ul>
 						</section>
 					</div>
@@ -115,7 +116,7 @@
 					<div class="tsd-signature tsd-kind-icon">context<span class="tsd-signature-symbol">:</span> <a href="" class="tsd-signature-type">C</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Store.ts#L94">src/lib/Store.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L129">src/lib/Store.ts:129</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -125,32 +126,32 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="onerror" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Error</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">:</span> <a href="storeoptionserrorhandler.html" class="tsd-signature-type">StoreOptionsErrorHandler</a></div>
+					<a name="filterhook" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> filter<wbr>Hook</h3>
+					<div class="tsd-signature tsd-kind-icon">filter<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="storeoptionsfilterhook.html" class="tsd-signature-type">StoreOptionsFilterHook</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Store.ts#L124">src/lib/Store.ts:124</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L135">src/lib/Store.ts:135</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The error handler.</p>
+							<p>The filter hook. Setting this will modify the behaviour of the store.</p>
 						</div>
 						<dl class="tsd-comment-tags">
 							<dt>default</dt>
-							<dd><p>(error) =&gt; console.error(error)</p>
+							<dd><p>LoadJavaScript.getNameData.bind(LoadJavaScript)</p>
 							</dd>
 						</dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="onload" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Load</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Load<span class="tsd-signature-symbol">:</span> <a href="storeoptionsloadhook.html" class="tsd-signature-type">StoreOptionsLoadHook</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="loadhook" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> load<wbr>Hook</h3>
+					<div class="tsd-signature tsd-kind-icon">load<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="storeoptionsloadhook.html" class="tsd-signature-type">StoreOptionsLoadHook</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Store.ts#L106">src/lib/Store.ts:106</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L147">src/lib/Store.ts:147</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -165,12 +166,32 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="onerror" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">:</span> <a href="storeoptionserrorhandler.html" class="tsd-signature-type">StoreOptionsErrorHandler</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L165">src/lib/Store.ts:165</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The error handler.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>(error) =&gt; console.error(error)</p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="onpostload" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Post<wbr>Load</h3>
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Post<wbr>Load<span class="tsd-signature-symbol">:</span> <a href="storeoptionspostloadhandler.html" class="tsd-signature-type">StoreOptionsPostLoadHandler</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Store.ts#L112">src/lib/Store.ts:112</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L153">src/lib/Store.ts:153</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,32 +206,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="onpreload" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Preload</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Preload<span class="tsd-signature-symbol">:</span> <a href="storeoptionspreloadhook.html" class="tsd-signature-type">StoreOptionsPreLoadHook</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Store.ts#L100">src/lib/Store.ts:100</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The preload hook. Setting this will modify the behaviour of the store.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>default</dt>
-							<dd><p>((path) =&gt; Promise.resolve().then(() =&gt; require(path))</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="onunload" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Unload</h3>
 					<div class="tsd-signature tsd-kind-icon">on<wbr>Unload<span class="tsd-signature-symbol">:</span> <a href="storeoptionsunloadhandler.html" class="tsd-signature-type">StoreOptionsUnLoadHandler</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Store.ts#L118">src/lib/Store.ts:118</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L159">src/lib/Store.ts:159</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -230,13 +231,33 @@
 					<div class="tsd-signature tsd-kind-icon">paths<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/4522412/src/lib/Store.ts#L89">src/lib/Store.ts:89</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L124">src/lib/Store.ts:124</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The paths to load pieces from, should be absolute.</p>
 						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="preloadhook" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> preload<wbr>Hook</h3>
+					<div class="tsd-signature tsd-kind-icon">preload<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="storeoptionspreloadhook.html" class="tsd-signature-type">StoreOptionsPreLoadHook</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L141">src/lib/Store.ts:141</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The preload hook. Setting this will modify the behaviour of the store.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>default</dt>
+							<dd><p>((path) =&gt; Promise.resolve().then(() =&gt; require(path))</p>
+							</dd>
+						</dl>
 					</div>
 				</section>
 			</section>
@@ -270,10 +291,13 @@
 						<a href="aliaspieceoptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="ifilter.html" class="tsd-kind-icon">IFilter</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="iloader.html" class="tsd-kind-icon">ILoader</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="ipiece.html" class="tsd-kind-icon">IPiece</a>
+					<li class=" tsd-kind-interface">
+						<a href="moduledata.html" class="tsd-kind-icon">Module<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="piececontext.html" class="tsd-kind-icon">Piece<wbr>Context</a>
@@ -290,16 +314,16 @@
 								<a href="storeoptions.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="storeoptions.html#filterhook" class="tsd-kind-icon">filter<wbr>Hook</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="storeoptions.html#loadhook" class="tsd-kind-icon">load<wbr>Hook</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="storeoptions.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="storeoptions.html#onload" class="tsd-kind-icon">on<wbr>Load</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="storeoptions.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="storeoptions.html#onpreload" class="tsd-kind-icon">on<wbr>Preload</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="storeoptions.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a>
@@ -307,12 +331,18 @@
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="storeoptions.html#paths" class="tsd-kind-icon">paths</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="storeoptions.html#preloadhook" class="tsd-kind-icon">preload<wbr>Hook</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
@@ -326,26 +356,32 @@
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptionsunloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>UnLoad<wbr>Handler</a>
 					</li>
-					<li class=" tsd-kind-type-alias">
+					<li class=" tsd-kind-type-alias tsd-is-private">
 						<a href="../globals.html#arr" class="tsd-kind-icon">Arr</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#awaited" class="tsd-kind-icon">Awaited</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#constructor" class="tsd-kind-icon">Constructor</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#ctor" class="tsd-kind-icon">Ctor</a>
 					</li>
-					<li class=" tsd-kind-function tsd-has-type-parameter">
+					<li class=" tsd-kind-type-alias">
+						<a href="../globals.html#filterresult" class="tsd-kind-icon">Filter<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#iloaderresult" class="tsd-kind-icon">ILoader<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a>
 					</li>
-					<li class=" tsd-kind-function">
-						<a href="../globals.html#getname" class="tsd-kind-icon">get<wbr>Name</a>
-					</li>
-					<li class=" tsd-kind-function">
+					<li class=" tsd-kind-function tsd-is-private">
 						<a href="../globals.html#isclass" class="tsd-kind-icon">is<wbr>Class</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="../globals.html#loadjavascript" class="tsd-kind-icon">Load<wbr>Java<wbr>Script</a>
 					</li>
 					<li class=" tsd-kind-object-literal">
 						<a href="../globals.html#loadmultiple" class="tsd-kind-icon">Load<wbr>Multiple</a>
@@ -373,8 +409,8 @@
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>

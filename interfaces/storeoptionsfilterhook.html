@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>StoreOptionsLoadHook | @sapphire/framework</title>
+	<title>StoreOptionsFilterHook | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="storeoptionsloadhook.html">StoreOptionsLoadHook</a>
+					<a href="storeoptionsfilterhook.html">StoreOptionsFilterHook</a>
 				</li>
 			</ul>
-			<h1>Interface StoreOptionsLoadHook&lt;T&gt;</h1>
+			<h1>Interface StoreOptionsFilterHook</h1>
 		</div>
 	</div>
 </header>
@@ -65,73 +65,59 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The load hook, use this to override the loader.</p>
+						<p>The filter hook, use this to override the default behavior.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
-						<dd><pre><code class="language-typescript"><span class="hljs-comment">// Using multi-loader:</span>
-<span class="hljs-keyword">import</span> { LoadMultiple } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@sapphire/cache&#x27;</span>;
-
+						<dd><pre><code class="language-typescript"><span class="hljs-comment">// ts-node support</span>
 <span class="hljs-keyword">new</span> Store(MyPiece, {
-  loadHook: LoadMultiple.load.bind(LoadMultiple)
+  filterHook: <span class="hljs-function">(<span class="hljs-params">path</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> extension = extname(path);
+    <span class="hljs-keyword">if</span> (![<span class="hljs-string">&#x27;.js&#x27;</span>, <span class="hljs-string">&#x27;.ts&#x27;</span>].includes(extension)) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">const</span> name = basename(path, extension);
+    <span class="hljs-keyword">return</span> { extension, name };
+  }
 });</code></pre>
 						</dd>
 					</dl>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>T<span class="tsd-signature-symbol">: </span><a href="../classes/piece.html" class="tsd-signature-type">Piece</a></h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">StoreOptionsLoadHook</span>
+						<span class="target">StoreOptionsFilterHook</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#iloaderresult" class="tsd-signature-type">ILoaderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+				<ul class="tsd-signatures tsd-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#filterresult" class="tsd-signature-type">FilterResult</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L91">src/lib/Store.ts:91</a></li>
+								<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f134323/src/lib/Store.ts#L48">src/lib/Store.ts:48</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
 							<div class="lead">
-								<p>The load hook, use this to override the loader.</p>
+								<p>The filter hook, use this to override the default behavior.</p>
 							</div>
-							<dl class="tsd-comment-tags">
-								<dt>example</dt>
-								<dd><pre><code class="language-typescript"><span class="hljs-comment">// Using multi-loader:</span>
-<span class="hljs-keyword">import</span> { LoadMultiple } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@sapphire/cache&#x27;</span>;
-
-<span class="hljs-keyword">new</span> Store(MyPiece, {
-  loadHook: LoadMultiple.load.bind(LoadMultiple)
-});</code></pre>
-								</dd>
-							</dl>
 						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>store: <a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-							</li>
-							<li>
 								<h5>path: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The path of the file to get the name and extension from,
+									allowing null to stop the store from loading it, e.g. on unsupported extensions.</p>
+								</div>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="../globals.html#iloaderresult" class="tsd-signature-type">ILoaderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <a href="../globals.html#filterresult" class="tsd-signature-type">FilterResult</a></h4>
 					</li>
 				</ul>
 			</section>
@@ -185,16 +171,16 @@
 					<li class=" tsd-kind-interface">
 						<a href="storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a>
 					</li>
 				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-has-type-parameter">
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptionspostloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Post<wbr>Load<wbr>Handler</a>
 					</li>
