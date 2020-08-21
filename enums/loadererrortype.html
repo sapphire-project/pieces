@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ILoader | @sapphire/framework</title>
+	<title>LoaderErrorType | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,88 +52,62 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="iloader.html">ILoader</a>
+					<a href="loadererrortype.html">LoaderErrorType</a>
 				</li>
 			</ul>
-			<h1>Interface ILoader</h1>
+			<h1>Enumeration LoaderErrorType</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>An abstracted loader interface.</p>
-					</div>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">ILoader</span>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="iloader.html#load" class="tsd-kind-icon">load</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loadererrortype.html#emptymodule" class="tsd-kind-icon">Empty<wbr>Module</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loadererrortype.html#incorrecttype" class="tsd-kind-icon">Incorrect<wbr>Type</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="loadererrortype.html#unloadedpiece" class="tsd-kind-icon">Unloaded<wbr>Piece</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-					<a name="load" class="tsd-anchor"></a>
-					<h3>load</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">load&lt;T&gt;<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#iloaderresult" class="tsd-signature-type">ILoaderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/strategies/loaders/ILoader.ts#L19">src/lib/strategies/loaders/ILoader.ts:19</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Loads one or more pieces from from the given path.</p>
-								</div>
-							</div>
-							<h4 class="tsd-type-parameters-title">Type parameters</h4>
-							<ul class="tsd-type-parameters">
-								<li>
-									<h4>T<span class="tsd-signature-symbol">: </span><a href="../classes/piece.html" class="tsd-signature-type">Piece</a></h4>
-								</li>
-							</ul>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>store: <a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The store that is responsible for loading the given path.</p>
-									</div>
-								</li>
-								<li>
-									<h5>path: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The path to load pieces from.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../globals.html#iloaderresult" class="tsd-signature-type">ILoaderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="emptymodule" class="tsd-anchor"></a>
+					<h3>Empty<wbr>Module</h3>
+					<div class="tsd-signature tsd-kind-icon">Empty<wbr>Module<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;EMPTY_MODULE&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/errors/LoaderError.ts#L2">src/lib/errors/LoaderError.ts:2</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="incorrecttype" class="tsd-anchor"></a>
+					<h3>Incorrect<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">Incorrect<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;INCORRECT_TYPE&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/errors/LoaderError.ts#L4">src/lib/errors/LoaderError.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="unloadedpiece" class="tsd-anchor"></a>
+					<h3>Unloaded<wbr>Piece</h3>
+					<div class="tsd-signature tsd-kind-icon">Unloaded<wbr>Piece<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;UNLOADED_PIECE&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/28c3d7e/src/lib/errors/LoaderError.ts#L3">src/lib/errors/LoaderError.ts:3</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -147,9 +121,24 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum">
-						<a href="../enums/loadererrortype.html" class="tsd-kind-icon">Loader<wbr>Error<wbr>Type</a>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-enum">
+						<a href="loadererrortype.html" class="tsd-kind-icon">Loader<wbr>Error<wbr>Type</a>
+						<ul>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="loadererrortype.html#emptymodule" class="tsd-kind-icon">Empty<wbr>Module</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="loadererrortype.html#incorrecttype" class="tsd-kind-icon">Incorrect<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="loadererrortype.html#unloadedpiece" class="tsd-kind-icon">Unloaded<wbr>Piece</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="../classes/aliaspiece.html" class="tsd-kind-icon">Alias<wbr>Piece</a>
 					</li>
@@ -166,52 +155,43 @@
 						<a href="../classes/store.html" class="tsd-kind-icon">Store</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="aliaspieceoptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a>
+						<a href="../interfaces/aliaspieceoptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="ifilter.html" class="tsd-kind-icon">IFilter</a>
-					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="iloader.html" class="tsd-kind-icon">ILoader</a>
-						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter">
-								<a href="iloader.html#load" class="tsd-kind-icon">load</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-interface">
-						<a href="moduledata.html" class="tsd-kind-icon">Module<wbr>Data</a>
+						<a href="../interfaces/ifilter.html" class="tsd-kind-icon">IFilter</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="piececontext.html" class="tsd-kind-icon">Piece<wbr>Context</a>
+						<a href="../interfaces/iloader.html" class="tsd-kind-icon">ILoader</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="pieceoptions.html" class="tsd-kind-icon">Piece<wbr>Options</a>
+						<a href="../interfaces/moduledata.html" class="tsd-kind-icon">Module<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/piececontext.html" class="tsd-kind-icon">Piece<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/pieceoptions.html" class="tsd-kind-icon">Piece<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="storeoptions.html" class="tsd-kind-icon">Store<wbr>Options</a>
+						<a href="../interfaces/storeoptions.html" class="tsd-kind-icon">Store<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a>
+						<a href="../interfaces/storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a>
+						<a href="../interfaces/storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
+						<a href="../interfaces/storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="storeoptionspostloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Post<wbr>Load<wbr>Handler</a>
+						<a href="../interfaces/storeoptionspostloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Post<wbr>Load<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="storeoptionspreloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Pre<wbr>Load<wbr>Hook</a>
+						<a href="../interfaces/storeoptionspreloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Pre<wbr>Load<wbr>Hook</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="storeoptionsunloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>UnLoad<wbr>Handler</a>
+						<a href="../interfaces/storeoptionsunloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>UnLoad<wbr>Handler</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-is-private">
 						<a href="../globals.html#arr" class="tsd-kind-icon">Arr</a>
