@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>LoaderError | @sapphire/framework</title>
+	<title>MissingExportsError | @sapphire/framework</title>
 	<meta name="description" content="Documentation for @sapphire/framework">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -52,10 +52,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="loadererror.html">LoaderError</a>
+					<a href="missingexportserror.html">MissingExportsError</a>
 				</li>
 			</ul>
-			<h1>Class LoaderError</h1>
+			<h1>Class MissingExportsError</h1>
 		</div>
 	</div>
 </header>
@@ -65,7 +65,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Describes a loader error with a type for easy indentification.</p>
+						<p>Describes a <a href="../enums/loadererrortype.html#emptymodule">LoaderErrorType.EmptyModule</a> loader error and adds a path for easy identification.</p>
 					</div>
 				</div>
 			</section>
@@ -73,15 +73,10 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="loadererror.html#error" class="tsd-signature-type">Error</a>
+						<a href="loadererror.html" class="tsd-signature-type">LoaderError</a>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">LoaderError</span>
-								<ul class="tsd-hierarchy">
-									<li>
-										<a href="missingexportserror.html" class="tsd-signature-type">MissingExportsError</a>
-									</li>
-								</ul>
+								<span class="target">MissingExportsError</span>
 							</li>
 						</ul>
 					</li>
@@ -94,17 +89,17 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="loadererror.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="missingexportserror.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="loadererror.html#message" class="tsd-kind-icon">message</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="loadererror.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="loadererror.html#stack" class="tsd-kind-icon">stack</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="loadererror.html#type" class="tsd-kind-icon">type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="loadererror.html#error" class="tsd-kind-icon">Error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="missingexportserror.html#message" class="tsd-kind-icon">message</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="missingexportserror.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="missingexportserror.html#path" class="tsd-kind-icon">path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="missingexportserror.html#stack" class="tsd-kind-icon">stack</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="missingexportserror.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,29 +107,27 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Loader<wbr>Error<span class="tsd-signature-symbol">(</span>type<span class="tsd-signature-symbol">: </span><a href="../enums/loadererrortype.html" class="tsd-signature-type">LoaderErrorType</a>, message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="loadererror.html" class="tsd-signature-type">LoaderError</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Missing<wbr>Exports<wbr>Error<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="missingexportserror.html" class="tsd-signature-type">MissingExportsError</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides <a href="loadererror.html">LoaderError</a>.<a href="loadererror.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/7234df4/src/lib/errors/LoaderError.ts#L14">src/lib/errors/LoaderError.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/7234df4/src/lib/errors/MissingExportsError.ts#L10">src/lib/errors/MissingExportsError.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>type: <a href="../enums/loadererrortype.html" class="tsd-signature-type">LoaderErrorType</a></h5>
-								</li>
-								<li>
-									<h5>message: <span class="tsd-signature-type">string</span></h5>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="loadererror.html" class="tsd-signature-type">LoaderError</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="missingexportserror.html" class="tsd-signature-type">MissingExportsError</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -163,6 +156,21 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="path" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> path</h3>
+					<div class="tsd-signature tsd-kind-icon">path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/7234df4/src/lib/errors/MissingExportsError.ts#L10">src/lib/errors/MissingExportsError.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The path of the module that did not have exports.</p>
+						</div>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="stack" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> stack</h3>
@@ -174,11 +182,12 @@
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="type" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/loadererrortype.html" class="tsd-signature-type">LoaderErrorType</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="loadererror.html">LoaderError</a>.<a href="loadererror.html#type">type</a></p>
 						<ul>
 							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/7234df4/src/lib/errors/LoaderError.ts#L14">src/lib/errors/LoaderError.ts:14</a></li>
 						</ul>
@@ -188,16 +197,6 @@
 							<p>The type of the error that was thrown.</p>
 						</div>
 					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="error" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> Error</h3>
-					<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ErrorConstructor</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in node_modules/typescript/lib/lib.es5.d.ts:984</li>
-						</ul>
-					</aside>
 				</section>
 			</section>
 		</div>
@@ -220,36 +219,36 @@
 					<li class=" tsd-kind-class tsd-has-type-parameter">
 						<a href="aliasstore.html" class="tsd-kind-icon">Alias<wbr>Store</a>
 					</li>
+					<li class=" tsd-kind-class">
+						<a href="loadererror.html" class="tsd-kind-icon">Loader<wbr>Error</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="loadererror.html" class="tsd-kind-icon">Loader<wbr>Error</a>
+						<a href="missingexportserror.html" class="tsd-kind-icon">Missing<wbr>Exports<wbr>Error</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="loadererror.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="missingexportserror.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="loadererror.html#message" class="tsd-kind-icon">message</a>
+								<a href="missingexportserror.html#message" class="tsd-kind-icon">message</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="loadererror.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="loadererror.html#stack" class="tsd-kind-icon">stack</a>
+								<a href="missingexportserror.html#name" class="tsd-kind-icon">name</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="loadererror.html#type" class="tsd-kind-icon">type</a>
+								<a href="missingexportserror.html#path" class="tsd-kind-icon">path</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="loadererror.html#error" class="tsd-kind-icon">Error</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="missingexportserror.html#stack" class="tsd-kind-icon">stack</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="missingexportserror.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-class">
-						<a href="missingexportserror.html" class="tsd-kind-icon">Missing<wbr>Exports<wbr>Error</a>
-					</li>
 					<li class=" tsd-kind-class">
 						<a href="piece.html" class="tsd-kind-icon">Piece</a>
 					</li>
