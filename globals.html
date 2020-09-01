@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@sapphire/framework</title>
-	<meta name="description" content="Documentation for @sapphire/framework">
+	<title>@sapphire/pieces</title>
+	<meta name="description" content="Documentation for @sapphire/pieces">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">@sapphire/framework</a>
+					<a href="index.html" class="title">@sapphire/pieces</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,7 +52,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1>@sapphire/framework</h1>
+			<h1>@sapphire/pieces</h1>
 		</div>
 	</div>
 </header>
@@ -134,10 +134,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-is-private">
 					<a name="arr" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> Arr</h3>
-					<div class="tsd-signature tsd-kind-icon">Arr<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
+					<div class="tsd-signature tsd-kind-icon">Arr<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/Shared.ts#L5">src/lib/strategies/Shared.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/Shared.ts#L5">src/lib/strategies/Shared.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -152,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">Awaited&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/Store.ts#L12">src/lib/Store.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/Store.ts#L12">src/lib/Store.ts:12</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -168,7 +168,7 @@
 					<div class="tsd-signature tsd-kind-icon">Constructor&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/Store.ts#L11">src/lib/Store.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/Store.ts#L11">src/lib/Store.ts:11</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -189,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">Ctor&lt;A, R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/Shared.ts#L11">src/lib/strategies/Shared.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/Shared.ts#L11">src/lib/strategies/Shared.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -200,10 +200,10 @@
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
 					<ul class="tsd-type-parameters">
 						<li>
-							<h4>A<span class="tsd-signature-symbol">: </span><a href="globals.html#arr" class="tsd-signature-type">Arr</a></h4>
+							<h4>A<span class="tsd-signature-symbol">: </span><a href="globals.html#arr" class="tsd-signature-type">Arr</a> = <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 						<li>
-							<h4>R</h4>
+							<h4>R = <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 					<div class="tsd-type-declaration">
@@ -218,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">Filter<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="interfaces/moduledata.html" class="tsd-signature-type">ModuleData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/filters/IFilter.ts#L19">src/lib/strategies/filters/IFilter.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/filters/IFilter.ts#L19">src/lib/strategies/filters/IFilter.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -233,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">ILoader<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AsyncIterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#iloaderresultentry" class="tsd-signature-type">ILoaderResultEntry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/loaders/ILoader.ts#L13">src/lib/strategies/loaders/ILoader.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/loaders/ILoader.ts#L13">src/lib/strategies/loaders/ILoader.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -254,7 +254,7 @@
 					<div class="tsd-signature tsd-kind-icon">ILoader<wbr>Result<wbr>Entry&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#ctor" class="tsd-signature-type">Ctor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ConstructorParameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Piece</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/loaders/ILoader.ts#L8">src/lib/strategies/loaders/ILoader.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/loaders/ILoader.ts#L8">src/lib/strategies/loaders/ILoader.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -282,7 +282,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/Shared.ts#L28">src/lib/strategies/Shared.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/Shared.ts#L28">src/lib/strategies/Shared.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -325,7 +325,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/Shared.ts#L18">src/lib/strategies/Shared.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/Shared.ts#L18">src/lib/strategies/Shared.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -355,7 +355,7 @@
 					<div class="tsd-signature tsd-kind-icon">Load<wbr>Java<wbr>Script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/filters/LoadJavaScript.ts#L8">src/lib/strategies/filters/LoadJavaScript.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/filters/LoadJavaScript.ts#L8">src/lib/strategies/filters/LoadJavaScript.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -374,7 +374,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/filters/LoadJavaScript.ts#L9">src/lib/strategies/filters/LoadJavaScript.ts:9</a></li>
+										<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/filters/LoadJavaScript.ts#L9">src/lib/strategies/filters/LoadJavaScript.ts:9</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -394,7 +394,7 @@
 					<div class="tsd-signature tsd-kind-icon">Load<wbr>Multiple<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/loaders/LoadMultiple.ts#L10">src/lib/strategies/loaders/LoadMultiple.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/loaders/LoadMultiple.ts#L10">src/lib/strategies/loaders/LoadMultiple.ts:10</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -414,7 +414,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/loaders/LoadMultiple.ts#L11">src/lib/strategies/loaders/LoadMultiple.ts:11</a></li>
+										<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/loaders/LoadMultiple.ts#L11">src/lib/strategies/loaders/LoadMultiple.ts:11</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
@@ -437,7 +437,7 @@
 					<div class="tsd-signature tsd-kind-icon">Load<wbr>Single<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/loaders/LoadSingle.ts#L8">src/lib/strategies/loaders/LoadSingle.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/loaders/LoadSingle.ts#L8">src/lib/strategies/loaders/LoadSingle.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -455,7 +455,7 @@
 							<li class="tsd-description">
 								<aside class="tsd-sources">
 									<ul>
-										<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/13f2eee/src/lib/strategies/loaders/LoadSingle.ts#L9">src/lib/strategies/loaders/LoadSingle.ts:9</a></li>
+										<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/d1e188e/src/lib/strategies/loaders/LoadSingle.ts#L9">src/lib/strategies/loaders/LoadSingle.ts:9</a></li>
 									</ul>
 								</aside>
 								<h4 class="tsd-parameters-title">Parameters</h4>
