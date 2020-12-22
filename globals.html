@@ -75,6 +75,7 @@
 								<li class="tsd-kind-class"><a href="classes/aliaspiece.html" class="tsd-kind-icon">Alias<wbr>Piece</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/aliasstore.html" class="tsd-kind-icon">Alias<wbr>Store</a></li>
 								<li class="tsd-kind-class"><a href="classes/loadererror.html" class="tsd-kind-icon">Loader<wbr>Error</a></li>
+								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/loaderstrategy.html" class="tsd-kind-icon">Loader<wbr>Strategy</a></li>
 								<li class="tsd-kind-class"><a href="classes/missingexportserror.html" class="tsd-kind-icon">Missing<wbr>Exports<wbr>Error</a></li>
 								<li class="tsd-kind-class"><a href="classes/piece.html" class="tsd-kind-icon">Piece</a></li>
 								<li class="tsd-kind-class tsd-has-type-parameter"><a href="classes/store.html" class="tsd-kind-icon">Store</a></li>
@@ -84,31 +85,26 @@
 							<h3>Interfaces</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-interface"><a href="interfaces/aliaspieceoptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/ifilter.html" class="tsd-kind-icon">IFilter</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/iloader.html" class="tsd-kind-icon">ILoader</a></li>
+								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/iloaderstrategy.html" class="tsd-kind-icon">ILoader<wbr>Strategy</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/moduledata.html" class="tsd-kind-icon">Module<wbr>Data</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/piececontext.html" class="tsd-kind-icon">Piece<wbr>Context</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/piececontextextras.html" class="tsd-kind-icon">Piece<wbr>Context<wbr>Extras</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/pieceoptions.html" class="tsd-kind-icon">Piece<wbr>Options</a></li>
 								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/storeoptions.html" class="tsd-kind-icon">Store<wbr>Options</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a></li>
-								<li class="tsd-kind-interface"><a href="interfaces/storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a></li>
-								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a></li>
-								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/storeoptionspostloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Post<wbr>Load<wbr>Handler</a></li>
-								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/storeoptionspreloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Pre<wbr>Load<wbr>Hook</a></li>
-								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/storeoptionsunloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>UnLoad<wbr>Handler</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-is-private"><a href="globals.html#arr" class="tsd-kind-icon">Arr</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#asyncpreloadresult" class="tsd-kind-icon">Async<wbr>Preload<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#awaited" class="tsd-kind-icon">Awaited</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#constructor" class="tsd-kind-icon">Constructor</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter tsd-is-private"><a href="globals.html#ctor" class="tsd-kind-icon">Ctor</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#filterresult" class="tsd-kind-icon">Filter<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#iloaderresult" class="tsd-kind-icon">ILoader<wbr>Result</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#iloaderresultentry" class="tsd-kind-icon">ILoader<wbr>Result<wbr>Entry</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#preloadresult" class="tsd-kind-icon">Preload<wbr>Result</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
@@ -116,14 +112,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-private"><a href="globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a></li>
 								<li class="tsd-kind-function tsd-is-private"><a href="globals.html#isclass" class="tsd-kind-icon">is<wbr>Class</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal"><a href="globals.html#loadjavascript" class="tsd-kind-icon">Load<wbr>Java<wbr>Script</a></li>
-								<li class="tsd-kind-object-literal"><a href="globals.html#loadmultiple" class="tsd-kind-icon">Load<wbr>Multiple</a></li>
-								<li class="tsd-kind-object-literal"><a href="globals.html#loadsingle" class="tsd-kind-icon">Load<wbr>Single</a></li>
 							</ul>
 						</section>
 					</div>
@@ -137,7 +125,7 @@
 					<div class="tsd-signature tsd-kind-icon">Arr<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/Shared.ts#L5">src/lib/strategies/Shared.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/Shared.ts#L5">src/lib/strategies/Shared.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -147,12 +135,33 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="asyncpreloadresult" class="tsd-anchor"></a>
+					<h3>Async<wbr>Preload<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Async<wbr>Preload<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#constructor" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L36">src/lib/strategies/ILoaderStrategy.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Represents the return data from <a href="interfaces/iloaderstrategy.html#preload">ILoaderStrategy.preload</a></p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><a href="classes/piece.html" class="tsd-signature-type">Piece</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="awaited" class="tsd-anchor"></a>
 					<h3>Awaited</h3>
 					<div class="tsd-signature tsd-kind-icon">Awaited&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L12">src/lib/Store.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L6">src/lib/strategies/ILoaderStrategy.ts:6</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -168,7 +177,7 @@
 					<div class="tsd-signature tsd-kind-icon">Constructor&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L11">src/lib/Store.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L5">src/lib/strategies/ILoaderStrategy.ts:5</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -189,7 +198,7 @@
 					<div class="tsd-signature tsd-kind-icon">Ctor&lt;A, R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/Shared.ts#L11">src/lib/strategies/Shared.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/Shared.ts#L11">src/lib/strategies/Shared.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -218,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">Filter<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="interfaces/moduledata.html" class="tsd-signature-type">ModuleData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/filters/IFilter.ts#L19">src/lib/strategies/filters/IFilter.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L26">src/lib/strategies/ILoaderStrategy.ts:26</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -233,12 +242,12 @@
 					<div class="tsd-signature tsd-kind-icon">ILoader<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AsyncIterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#iloaderresultentry" class="tsd-signature-type">ILoaderResultEntry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/loaders/ILoader.ts#L13">src/lib/strategies/loaders/ILoader.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L46">src/lib/strategies/ILoaderStrategy.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Represents the return data from <a href="interfaces/iloader.html#load">ILoader.load</a>.</p>
+							<p>Represents the return data from <a href="interfaces/iloaderstrategy.html#load">ILoaderStrategy.load</a>.</p>
 						</div>
 					</div>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -254,12 +263,33 @@
 					<div class="tsd-signature tsd-kind-icon">ILoader<wbr>Result<wbr>Entry&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#ctor" class="tsd-signature-type">Ctor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ConstructorParameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Piece</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/loaders/ILoader.ts#L8">src/lib/strategies/loaders/ILoader.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L41">src/lib/strategies/ILoaderStrategy.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>Represents an entry from <a href="globals.html#iloaderresult">ILoaderResult</a>.</p>
+						</div>
+					</div>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><a href="classes/piece.html" class="tsd-signature-type">Piece</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="preloadresult" class="tsd-anchor"></a>
+					<h3>Preload<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Preload<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#constructor" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L31">src/lib/strategies/ILoaderStrategy.ts:31</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Represents the return data from <a href="interfaces/iloaderstrategy.html#preload">ILoaderStrategy.preload</a></p>
 						</div>
 					</div>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -282,7 +312,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/Shared.ts#L28">src/lib/strategies/Shared.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/Shared.ts#L28">src/lib/strategies/Shared.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -325,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/Shared.ts#L18">src/lib/strategies/Shared.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/Shared.ts#L18">src/lib/strategies/Shared.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -345,132 +375,6 @@
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">value</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">Ctor</span></h4>
 						</li>
 					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal">
-					<a name="loadjavascript" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Load<wbr>Java<wbr>Script</h3>
-					<div class="tsd-signature tsd-kind-icon">Load<wbr>Java<wbr>Script<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/filters/LoadJavaScript.ts#L8">src/lib/strategies/filters/LoadJavaScript.ts:8</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The JavaScript loader. This loader is the default and filters modules
-							by the <code>.js</code> extension.</p>
-						</div>
-					</div>
-					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
-						<a name="loadjavascript.getnamedata" class="tsd-anchor"></a>
-						<h3>get<wbr>Name<wbr>Data</h3>
-						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
-							<li class="tsd-signature tsd-kind-icon">get<wbr>Name<wbr>Data<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>extension<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></li>
-						</ul>
-						<ul class="tsd-descriptions">
-							<li class="tsd-description">
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/filters/LoadJavaScript.ts#L9">src/lib/strategies/filters/LoadJavaScript.ts:9</a></li>
-									</ul>
-								</aside>
-								<h4 class="tsd-parameters-title">Parameters</h4>
-								<ul class="tsd-parameters">
-									<li>
-										<h5>path: <span class="tsd-signature-type">string</span></h5>
-									</li>
-								</ul>
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{ </span>extension<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h4>
-							</li>
-						</ul>
-					</section>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal">
-					<a name="loadmultiple" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Load<wbr>Multiple</h3>
-					<div class="tsd-signature tsd-kind-icon">Load<wbr>Multiple<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/loaders/LoadMultiple.ts#L10">src/lib/strategies/loaders/LoadMultiple.ts:10</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The multi-loader. This loader can load multiple classes from a module
-								into the store. The catch is that you must specify the name for each
-							piece.</p>
-						</div>
-					</div>
-					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
-						<a name="loadmultiple.load" class="tsd-anchor"></a>
-						<h3>load</h3>
-						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
-							<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AsyncGenerator</span><span class="tsd-signature-symbol">&lt;</span><a href="classes/store.html#constructor-1" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
-						</ul>
-						<ul class="tsd-descriptions">
-							<li class="tsd-description">
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/loaders/LoadMultiple.ts#L11">src/lib/strategies/loaders/LoadMultiple.ts:11</a></li>
-									</ul>
-								</aside>
-								<h4 class="tsd-parameters-title">Parameters</h4>
-								<ul class="tsd-parameters">
-									<li>
-										<h5>store: <a href="classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									</li>
-									<li>
-										<h5>path: <span class="tsd-signature-type">string</span></h5>
-									</li>
-								</ul>
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AsyncGenerator</span><span class="tsd-signature-symbol">&lt;</span><a href="classes/store.html#constructor-1" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							</li>
-						</ul>
-					</section>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal">
-					<a name="loadsingle" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> Load<wbr>Single</h3>
-					<div class="tsd-signature tsd-kind-icon">Load<wbr>Single<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/loaders/LoadSingle.ts#L8">src/lib/strategies/loaders/LoadSingle.ts:8</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The single loader. This loader is the default and returns the first loaded class.</p>
-						</div>
-					</div>
-					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
-						<a name="loadsingle.load" class="tsd-anchor"></a>
-						<h3>load</h3>
-						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
-							<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AsyncGenerator</span><span class="tsd-signature-symbol">&lt;</span><a href="classes/store.html#constructor-1" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-						</ul>
-						<ul class="tsd-descriptions">
-							<li class="tsd-description">
-								<aside class="tsd-sources">
-									<ul>
-										<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/strategies/loaders/LoadSingle.ts#L9">src/lib/strategies/loaders/LoadSingle.ts:9</a></li>
-									</ul>
-								</aside>
-								<h4 class="tsd-parameters-title">Parameters</h4>
-								<ul class="tsd-parameters">
-									<li>
-										<h5>store: <a href="classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
-									</li>
-									<li>
-										<h5>path: <span class="tsd-signature-type">string</span></h5>
-									</li>
-								</ul>
-								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AsyncGenerator</span><span class="tsd-signature-symbol">&lt;</span><a href="classes/store.html#constructor-1" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							</li>
-						</ul>
-					</section>
 				</section>
 			</section>
 		</div>
@@ -496,6 +400,9 @@
 					<li class=" tsd-kind-class">
 						<a href="classes/loadererror.html" class="tsd-kind-icon">Loader<wbr>Error</a>
 					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="classes/loaderstrategy.html" class="tsd-kind-icon">Loader<wbr>Strategy</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="classes/missingexportserror.html" class="tsd-kind-icon">Missing<wbr>Exports<wbr>Error</a>
 					</li>
@@ -508,11 +415,8 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/aliaspieceoptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/ifilter.html" class="tsd-kind-icon">IFilter</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/iloader.html" class="tsd-kind-icon">ILoader</a>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="interfaces/iloaderstrategy.html" class="tsd-kind-icon">ILoader<wbr>Strategy</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/moduledata.html" class="tsd-kind-icon">Module<wbr>Data</a>
@@ -529,26 +433,11 @@
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/storeoptions.html" class="tsd-kind-icon">Store<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/storeoptionspostloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Post<wbr>Load<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/storeoptionspreloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Pre<wbr>Load<wbr>Hook</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="interfaces/storeoptionsunloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>UnLoad<wbr>Handler</a>
-					</li>
 					<li class=" tsd-kind-type-alias tsd-is-private">
 						<a href="globals.html#arr" class="tsd-kind-icon">Arr</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#asyncpreloadresult" class="tsd-kind-icon">Async<wbr>Preload<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#awaited" class="tsd-kind-icon">Awaited</a>
@@ -568,20 +457,14 @@
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#iloaderresultentry" class="tsd-kind-icon">ILoader<wbr>Result<wbr>Entry</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#preloadresult" class="tsd-kind-icon">Preload<wbr>Result</a>
+					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-private">
 						<a href="globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-private">
 						<a href="globals.html#isclass" class="tsd-kind-icon">is<wbr>Class</a>
-					</li>
-					<li class=" tsd-kind-object-literal">
-						<a href="globals.html#loadjavascript" class="tsd-kind-icon">Load<wbr>Java<wbr>Script</a>
-					</li>
-					<li class=" tsd-kind-object-literal">
-						<a href="globals.html#loadmultiple" class="tsd-kind-icon">Load<wbr>Multiple</a>
-					</li>
-					<li class=" tsd-kind-object-literal">
-						<a href="globals.html#loadsingle" class="tsd-kind-icon">Load<wbr>Single</a>
 					</li>
 				</ul>
 			</nav>
@@ -607,10 +490,11 @@
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>

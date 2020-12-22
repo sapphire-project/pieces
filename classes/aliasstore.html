@@ -105,22 +105,19 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#constructor-1" class="tsd-kind-icon">Constructor</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="aliasstore.html#aliases" class="tsd-kind-icon">aliases</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#filterhook" class="tsd-kind-icon">filter<wbr>Hook</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#loadhook" class="tsd-kind-icon">load<wbr>Hook</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#paths" class="tsd-kind-icon">paths</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#preloadhook" class="tsd-kind-icon">preload<wbr>Hook</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#strategy" class="tsd-kind-icon">strategy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="aliasstore.html#default" class="tsd-kind-icon">default</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="aliasstore.html#defaultstrategy" class="tsd-kind-icon">default<wbr>Strategy</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="aliasstore.html#injectedcontext" class="tsd-kind-icon">injected<wbr>Context</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected">
+						<section class="tsd-index-section tsd-is-inherited">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="aliasstore.html#extras" class="tsd-kind-icon">extras</a></li>
+								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited"><a href="aliasstore.html#context" class="tsd-kind-icon">context</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -186,7 +183,7 @@
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#constructor">constructor</a></p>
 								<p>Overrides Collection.[&#x27;constructor&#x27;]</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L182">src/lib/Store.ts:182</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L38">src/lib/Store.ts:38</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -224,7 +221,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#constructor-1">Constructor</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L174">src/lib/Store.ts:174</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L35">src/lib/Store.ts:35</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -234,7 +231,7 @@
 					<div class="tsd-signature tsd-kind-icon">aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Collection</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Collection&lt;string, T&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/AliasStore.ts#L12">src/lib/AliasStore.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/AliasStore.ts#L12">src/lib/AliasStore.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -244,68 +241,13 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="filterhook" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> filter<wbr>Hook</h3>
-					<div class="tsd-signature tsd-kind-icon">filter<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="../interfaces/storeoptionsfilterhook.html" class="tsd-signature-type">StoreOptionsFilterHook</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#filterhook">filterHook</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L177">src/lib/Store.ts:177</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="loadhook" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> load<wbr>Hook</h3>
-					<div class="tsd-signature tsd-kind-icon">load<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="../interfaces/storeoptionsloadhook.html" class="tsd-signature-type">StoreOptionsLoadHook</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#loadhook">loadHook</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L179">src/lib/Store.ts:179</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="name" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L175">src/lib/Store.ts:175</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="onerror" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Error</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">:</span> <a href="../interfaces/storeoptionserrorhandler.html" class="tsd-signature-type">StoreOptionsErrorHandler</a></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#onerror">onError</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L182">src/lib/Store.ts:182</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="onpostload" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Post<wbr>Load</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Post<wbr>Load<span class="tsd-signature-symbol">:</span> <a href="../interfaces/storeoptionspostloadhandler.html" class="tsd-signature-type">StoreOptionsPostLoadHandler</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#onpostload">onPostLoad</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L180">src/lib/Store.ts:180</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="onunload" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> on<wbr>Unload</h3>
-					<div class="tsd-signature tsd-kind-icon">on<wbr>Unload<span class="tsd-signature-symbol">:</span> <a href="../interfaces/storeoptionsunloadhandler.html" class="tsd-signature-type">StoreOptionsUnLoadHandler</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#onunload">onUnload</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L181">src/lib/Store.ts:181</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L36">src/lib/Store.ts:36</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -316,18 +258,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#paths">paths</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L176">src/lib/Store.ts:176</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-					<a name="preloadhook" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> preload<wbr>Hook</h3>
-					<div class="tsd-signature tsd-kind-icon">preload<wbr>Hook<span class="tsd-signature-symbol">:</span> <a href="../interfaces/storeoptionspreloadhook.html" class="tsd-signature-type">StoreOptionsPreLoadHook</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#preloadhook">preloadHook</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L178">src/lib/Store.ts:178</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L37">src/lib/Store.ts:37</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -342,6 +273,17 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+					<a name="strategy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> strategy</h3>
+					<div class="tsd-signature tsd-kind-icon">strategy<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iloaderstrategy.html" class="tsd-signature-type">ILoaderStrategy</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#strategy">strategy</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L38">src/lib/Store.ts:38</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="default" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> default</h3>
@@ -353,26 +295,119 @@
 						</ul>
 					</aside>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="defaultstrategy" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Strategy</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Strategy<span class="tsd-signature-symbol">:</span> <a href="../interfaces/iloaderstrategy.html" class="tsd-signature-type">ILoaderStrategy</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#defaultstrategy">defaultStrategy</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L269">src/lib/Store.ts:269</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The default strategy, defaults to <a href="loaderstrategy.html">LoaderStrategy</a>, which is constructed on demand when a store is constructed,
+							when none was set beforehand.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+					<a name="injectedcontext" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> injected<wbr>Context</h3>
+					<div class="tsd-signature tsd-kind-icon">injected<wbr>Context<span class="tsd-signature-symbol">:</span> <a href="../interfaces/piececontextextras.html" class="tsd-signature-type">PieceContextExtras</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#injectedcontext">injectedContext</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L263">src/lib/Store.ts:263</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The injected variables that will be accessible to all stores and pieces. To add an extra property, simply mutate
+							the object to add it, and this will update all stores and pieces simultaneously.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-comment">// Add a reference to the Client:</span>
+<span class="hljs-keyword">import</span> { Store } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;(at)sapphire/pieces&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> SapphireClient <span class="hljs-keyword">extends</span> Client {
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params">options</span>) {
+    <span class="hljs-built_in">super</span>(options);
+
+    Store.injectedContext.client = <span class="hljs-built_in">this</span>;
+  }
+}
+
+<span class="hljs-comment">// Can be placed anywhere in a TypeScript file, for JavaScript projects,</span>
+<span class="hljs-comment">// you can create an `augments.d.ts` and place the code there.</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-keyword">module</span> &#x27;(at)sapphire/pieces&#x27; {
+  <span class="hljs-keyword">interface</span> PieceContextExtras {
+    client: SapphireClient;
+  }
+}
+
+<span class="hljs-comment">// In any piece, core, plugin, or custom:</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> UserCommand <span class="hljs-keyword">extends</span> Command {
+  <span class="hljs-keyword">public</span> run(message, args) {
+    <span class="hljs-comment">// The injected client is available here:</span>
+    <span class="hljs-keyword">const</span> { client } = <span class="hljs-built_in">this</span>.context;
+
+    <span class="hljs-comment">// ...</span>
+  }
+}</code></pre>
+							</dd>
+							<dt>example</dt>
+							<dd><pre><code class="language-typescript"><span class="hljs-comment">// In a plugin&#x27;s context, e.g. API:</span>
+<span class="hljs-keyword">class</span> Api <span class="hljs-keyword">extends</span> Plugin {
+  <span class="hljs-keyword">static</span> [postInitialization]() {
+    <span class="hljs-keyword">const</span> server = <span class="hljs-keyword">new</span> Server(<span class="hljs-built_in">this</span>);
+    Store.injectedContext.server = server;
+
+    <span class="hljs-comment">// ...</span>
+  }
+}
+
+<span class="hljs-keyword">declare</span> <span class="hljs-keyword">module</span> &#x27;(at)sapphire/pieces&#x27; {
+  <span class="hljs-keyword">interface</span> PieceContextExtras {
+    server: Server;
+  }
+}
+
+<span class="hljs-comment">// In any piece, even those that aren&#x27;t routes nor middlewares:</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> UserRoute <span class="hljs-keyword">extends</span> Route {
+  <span class="hljs-keyword">public</span> [methods.POST](message, args) {
+    <span class="hljs-comment">// The injected server is available here:</span>
+    <span class="hljs-keyword">const</span> { server } = <span class="hljs-built_in">this</span>.context;
+
+    <span class="hljs-comment">// ...</span>
+  }
+}</code></pre>
+							</dd>
+						</dl>
+					</div>
+				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
 				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-					<a name="extras" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> extras</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> extras<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/piececontextextras.html" class="tsd-signature-type">PieceContextExtras</a></li>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+					<a name="context" class="tsd-anchor"></a>
+					<h3>context</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> context<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/piececontextextras.html" class="tsd-signature-type">PieceContextExtras</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#extras">extras</a></p>
+								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#context">context</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L280">src/lib/Store.ts:280</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L55">src/lib/Store.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>The extras to be passed to the constructor of all pieces.</p>
+									<p>The extras to be used for dependency injection in all pieces. Returns a reference of [[Store.defaultExtras]].</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/piececontextextras.html" class="tsd-signature-type">PieceContextExtras</a></h4>
@@ -509,7 +544,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#construct">construct</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L304">src/lib/Store.ts:304</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L155">src/lib/Store.ts:155</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1490,7 +1525,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="store.html">Store</a>.<a href="store.html#get">get</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/AliasStore.ts#L18">src/lib/AliasStore.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/AliasStore.ts#L18">src/lib/AliasStore.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1557,7 +1592,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="store.html">Store</a>.<a href="store.html#insert">insert</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/AliasStore.ts#L45">src/lib/AliasStore.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/AliasStore.ts#L45">src/lib/AliasStore.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1732,7 +1767,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#load">load</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L221">src/lib/Store.ts:221</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L79">src/lib/Store.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1765,7 +1800,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#loadall">loadAll</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L246">src/lib/Store.ts:246</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L104">src/lib/Store.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2305,7 +2340,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#registerpath">registerPath</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L211">src/lib/Store.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L69">src/lib/Store.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2344,7 +2379,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="store.html">Store</a>.<a href="store.html#resolve">resolve</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/Store.ts#L266">src/lib/Store.ts:266</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/Store.ts#L124">src/lib/Store.ts:124</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2816,7 +2851,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="store.html">Store</a>.<a href="store.html#unload">unload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/cb09fff/src/lib/AliasStore.ts#L27">src/lib/AliasStore.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/AliasStore.ts#L27">src/lib/AliasStore.ts:27</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2871,37 +2906,28 @@
 								<a href="aliasstore.html#aliases" class="tsd-kind-icon">aliases</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="aliasstore.html#filterhook" class="tsd-kind-icon">filter<wbr>Hook</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="aliasstore.html#loadhook" class="tsd-kind-icon">load<wbr>Hook</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="aliasstore.html#name" class="tsd-kind-icon">name</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="aliasstore.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="aliasstore.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="aliasstore.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="aliasstore.html#paths" class="tsd-kind-icon">paths</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="aliasstore.html#preloadhook" class="tsd-kind-icon">preload<wbr>Hook</a>
+								<a href="aliasstore.html#size" class="tsd-kind-icon">size</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
-								<a href="aliasstore.html#size" class="tsd-kind-icon">size</a>
+								<a href="aliasstore.html#strategy" class="tsd-kind-icon">strategy</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="aliasstore.html#default" class="tsd-kind-icon">default</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
-								<a href="aliasstore.html#extras" class="tsd-kind-icon">extras</a>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="aliasstore.html#defaultstrategy" class="tsd-kind-icon">default<wbr>Strategy</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="aliasstore.html#injectedcontext" class="tsd-kind-icon">injected<wbr>Context</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
+								<a href="aliasstore.html#context" class="tsd-kind-icon">context</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="aliasstore.html#array" class="tsd-kind-icon">array</a>
@@ -3033,6 +3059,9 @@
 					<li class=" tsd-kind-class">
 						<a href="loadererror.html" class="tsd-kind-icon">Loader<wbr>Error</a>
 					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="loaderstrategy.html" class="tsd-kind-icon">Loader<wbr>Strategy</a>
+					</li>
 					<li class=" tsd-kind-class">
 						<a href="missingexportserror.html" class="tsd-kind-icon">Missing<wbr>Exports<wbr>Error</a>
 					</li>
@@ -3045,11 +3074,8 @@
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/aliaspieceoptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/ifilter.html" class="tsd-kind-icon">IFilter</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/iloader.html" class="tsd-kind-icon">ILoader</a>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/iloaderstrategy.html" class="tsd-kind-icon">ILoader<wbr>Strategy</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/moduledata.html" class="tsd-kind-icon">Module<wbr>Data</a>
@@ -3066,26 +3092,11 @@
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="../interfaces/storeoptions.html" class="tsd-kind-icon">Store<wbr>Options</a>
 					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/storeoptionserrorhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Error<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="../interfaces/storeoptionsfilterhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Filter<wbr>Hook</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/storeoptionsloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Load<wbr>Hook</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/storeoptionspostloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Post<wbr>Load<wbr>Handler</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/storeoptionspreloadhook.html" class="tsd-kind-icon">Store<wbr>Options<wbr>Pre<wbr>Load<wbr>Hook</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-has-type-parameter">
-						<a href="../interfaces/storeoptionsunloadhandler.html" class="tsd-kind-icon">Store<wbr>Options<wbr>UnLoad<wbr>Handler</a>
-					</li>
 					<li class=" tsd-kind-type-alias tsd-is-private">
 						<a href="../globals.html#arr" class="tsd-kind-icon">Arr</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#asyncpreloadresult" class="tsd-kind-icon">Async<wbr>Preload<wbr>Result</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="../globals.html#awaited" class="tsd-kind-icon">Awaited</a>
@@ -3105,20 +3116,14 @@
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="../globals.html#iloaderresultentry" class="tsd-kind-icon">ILoader<wbr>Result<wbr>Entry</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../globals.html#preloadresult" class="tsd-kind-icon">Preload<wbr>Result</a>
+					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-private">
 						<a href="../globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-private">
 						<a href="../globals.html#isclass" class="tsd-kind-icon">is<wbr>Class</a>
-					</li>
-					<li class=" tsd-kind-object-literal">
-						<a href="../globals.html#loadjavascript" class="tsd-kind-icon">Load<wbr>Java<wbr>Script</a>
-					</li>
-					<li class=" tsd-kind-object-literal">
-						<a href="../globals.html#loadmultiple" class="tsd-kind-icon">Load<wbr>Multiple</a>
-					</li>
-					<li class=" tsd-kind-object-literal">
-						<a href="../globals.html#loadsingle" class="tsd-kind-icon">Load<wbr>Single</a>
 					</li>
 				</ul>
 			</nav>
@@ -3144,10 +3149,11 @@
 				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
