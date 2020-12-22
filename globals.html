@@ -90,6 +90,7 @@
 								<li class="tsd-kind-interface"><a href="interfaces/piececontext.html" class="tsd-kind-icon">Piece<wbr>Context</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/piececontextextras.html" class="tsd-kind-icon">Piece<wbr>Context<wbr>Extras</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/pieceoptions.html" class="tsd-kind-icon">Piece<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/rootdata.html" class="tsd-kind-icon">Root<wbr>Data</a></li>
 								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/storeoptions.html" class="tsd-kind-icon">Store<wbr>Options</a></li>
 							</ul>
 						</section>
@@ -107,10 +108,17 @@
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#preloadresult" class="tsd-kind-icon">Preload<wbr>Result</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable"><a href="globals.html#data" class="tsd-kind-icon">data</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-has-type-parameter tsd-is-private"><a href="globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#getrootdata" class="tsd-kind-icon">get<wbr>Root<wbr>Data</a></li>
 								<li class="tsd-kind-function tsd-is-private"><a href="globals.html#isclass" class="tsd-kind-icon">is<wbr>Class</a></li>
 							</ul>
 						</section>
@@ -125,7 +133,7 @@
 					<div class="tsd-signature tsd-kind-icon">Arr<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/Shared.ts#L5">src/lib/strategies/Shared.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/Shared.ts#L5">src/lib/strategies/Shared.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -137,10 +145,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="asyncpreloadresult" class="tsd-anchor"></a>
 					<h3>Async<wbr>Preload<wbr>Result</h3>
-					<div class="tsd-signature tsd-kind-icon">Async<wbr>Preload<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#constructor" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Async<wbr>Preload<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="classes/store.html#constructor-1" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/ILoaderStrategy.ts#L41">src/lib/strategies/ILoaderStrategy.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/ILoaderStrategy.ts#L41">src/lib/strategies/ILoaderStrategy.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -161,7 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">Awaited&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">PromiseLike</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/ILoaderStrategy.ts#L6">src/lib/strategies/ILoaderStrategy.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/ILoaderStrategy.ts#L6">src/lib/strategies/ILoaderStrategy.ts:6</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -177,7 +185,7 @@
 					<div class="tsd-signature tsd-kind-icon">Constructor&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/ILoaderStrategy.ts#L5">src/lib/strategies/ILoaderStrategy.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/ILoaderStrategy.ts#L5">src/lib/strategies/ILoaderStrategy.ts:5</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -198,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">Ctor&lt;A, R&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/Shared.ts#L11">src/lib/strategies/Shared.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/Shared.ts#L11">src/lib/strategies/Shared.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -227,7 +235,7 @@
 					<div class="tsd-signature tsd-kind-icon">Filter<wbr>Result<span class="tsd-signature-symbol">:</span> <a href="interfaces/moduledata.html" class="tsd-signature-type">ModuleData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/ILoaderStrategy.ts#L31">src/lib/strategies/ILoaderStrategy.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/ILoaderStrategy.ts#L31">src/lib/strategies/ILoaderStrategy.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -242,7 +250,7 @@
 					<div class="tsd-signature tsd-kind-icon">ILoader<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AsyncIterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#iloaderresultentry" class="tsd-signature-type">ILoaderResultEntry</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/ILoaderStrategy.ts#L51">src/lib/strategies/ILoaderStrategy.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/ILoaderStrategy.ts#L51">src/lib/strategies/ILoaderStrategy.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -263,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">ILoader<wbr>Result<wbr>Entry&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#ctor" class="tsd-signature-type">Ctor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ConstructorParameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">typeof </span><span class="tsd-signature-type">Piece</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/ILoaderStrategy.ts#L46">src/lib/strategies/ILoaderStrategy.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/ILoaderStrategy.ts#L46">src/lib/strategies/ILoaderStrategy.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -281,10 +289,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="preloadresult" class="tsd-anchor"></a>
 					<h3>Preload<wbr>Result</h3>
-					<div class="tsd-signature tsd-kind-icon">Preload<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><a href="globals.html#constructor" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Preload<wbr>Result&lt;T&gt;<span class="tsd-signature-symbol">:</span> <a href="globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><a href="classes/store.html#constructor-1" class="tsd-signature-type">Constructor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">PropertyKey</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/ILoaderStrategy.ts#L36">src/lib/strategies/ILoaderStrategy.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/ILoaderStrategy.ts#L36">src/lib/strategies/ILoaderStrategy.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -300,7 +308,20 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable">
+					<a name="data" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagLet">Let</span> data</h3>
+					<div class="tsd-signature tsd-kind-icon">data<span class="tsd-signature-symbol">:</span> <a href="interfaces/rootdata.html" class="tsd-signature-type">RootData</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/internal/RootScan.ts#L4">src/lib/internal/RootScan.ts:4</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter tsd-is-private">
 					<a name="classextends" class="tsd-anchor"></a>
@@ -312,7 +333,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/Shared.ts#L28">src/lib/strategies/Shared.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/Shared.ts#L28">src/lib/strategies/Shared.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -345,6 +366,23 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="getrootdata" class="tsd-anchor"></a>
+					<h3>get<wbr>Root<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Root<wbr>Data<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="interfaces/rootdata.html" class="tsd-signature-type">RootData</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/internal/RootScan.ts#L5">src/lib/internal/RootScan.ts:5</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="interfaces/rootdata.html" class="tsd-signature-type">RootData</a></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-is-private">
 					<a name="isclass" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Class</h3>
@@ -355,7 +393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/16c2a43/src/lib/strategies/Shared.ts#L18">src/lib/strategies/Shared.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/3492c60/src/lib/strategies/Shared.ts#L18">src/lib/strategies/Shared.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -430,6 +468,9 @@
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/pieceoptions.html" class="tsd-kind-icon">Piece<wbr>Options</a>
 					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/rootdata.html" class="tsd-kind-icon">Root<wbr>Data</a>
+					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/storeoptions.html" class="tsd-kind-icon">Store<wbr>Options</a>
 					</li>
@@ -460,8 +501,14 @@
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="globals.html#preloadresult" class="tsd-kind-icon">Preload<wbr>Result</a>
 					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#data" class="tsd-kind-icon">data</a>
+					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter tsd-is-private">
 						<a href="globals.html#classextends" class="tsd-kind-icon">class<wbr>Extends</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#getrootdata" class="tsd-kind-icon">get<wbr>Root<wbr>Data</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-private">
 						<a href="globals.html#isclass" class="tsd-kind-icon">is<wbr>Class</a>
