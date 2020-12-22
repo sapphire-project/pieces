@@ -101,7 +101,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iloaderstrategy.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iloaderstrategy.html#load" class="tsd-kind-icon">load</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iloaderstrategy.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iloaderstrategy.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iloaderstrategy.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iloaderstrategy.html#onloadall" class="tsd-kind-icon">on<wbr>Load<wbr>All</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iloaderstrategy.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="iloaderstrategy.html#preload" class="tsd-kind-icon">preload</a></li>
 							</ul>
@@ -121,7 +122,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/ILoaderStrategy.ts#L73">src/lib/strategies/ILoaderStrategy.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/ILoaderStrategy.ts#L73">src/lib/strategies/ILoaderStrategy.ts:73</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -166,7 +167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/ILoaderStrategy.ts#L108">src/lib/strategies/ILoaderStrategy.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/ILoaderStrategy.ts#L108">src/lib/strategies/ILoaderStrategy.ts:108</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -206,7 +207,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/ILoaderStrategy.ts#L126">src/lib/strategies/ILoaderStrategy.ts:126</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/ILoaderStrategy.ts#L134">src/lib/strategies/ILoaderStrategy.ts:134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -231,19 +232,22 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="onpostload" class="tsd-anchor"></a>
-					<h3>on<wbr>Post<wbr>Load</h3>
+					<a name="onload" class="tsd-anchor"></a>
+					<h3>on<wbr>Load</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Post<wbr>Load<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, piece<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Load<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, piece<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/ILoaderStrategy.ts#L114">src/lib/strategies/ILoaderStrategy.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/ILoaderStrategy.ts#L115">src/lib/strategies/ILoaderStrategy.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called after a piece has been loaded, but before <a href="../classes/piece.html#onload">Piece.onLoad</a> and <a href="../classes/store.html#set">Store.set</a>.</p>
+								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -260,7 +264,38 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="onloadall" class="tsd-anchor"></a>
+					<h3>on<wbr>Load<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Load<wbr>All<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/ILoaderStrategy.ts#L121">src/lib/strategies/ILoaderStrategy.ts:121</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called after all pieces have been loaded.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>store: <a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The store that loaded all pieces.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -268,16 +303,19 @@
 					<a name="onunload" class="tsd-anchor"></a>
 					<h3>on<wbr>Unload</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Unload<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, piece<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Unload<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="../classes/store.html" class="tsd-signature-type">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, piece<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/ILoaderStrategy.ts#L120">src/lib/strategies/ILoaderStrategy.ts:120</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/ILoaderStrategy.ts#L128">src/lib/strategies/ILoaderStrategy.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called after a piece has been unloaded or overwritten by a newly loaded piece.</p>
+								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -294,7 +332,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="../globals.html#awaited" class="tsd-signature-type">Awaited</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -308,7 +346,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/ILoaderStrategy.ts#L96">src/lib/strategies/ILoaderStrategy.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/ILoaderStrategy.ts#L96">src/lib/strategies/ILoaderStrategy.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -398,7 +436,10 @@
 								<a href="iloaderstrategy.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="iloaderstrategy.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a>
+								<a href="iloaderstrategy.html#onload" class="tsd-kind-icon">on<wbr>Load</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="iloaderstrategy.html#onloadall" class="tsd-kind-icon">on<wbr>Load<wbr>All</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="iloaderstrategy.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a>

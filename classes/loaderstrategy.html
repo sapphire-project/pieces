@@ -109,7 +109,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="loaderstrategy.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="loaderstrategy.html#load" class="tsd-kind-icon">load</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="loaderstrategy.html#onerror" class="tsd-kind-icon">on<wbr>Error</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="loaderstrategy.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="loaderstrategy.html#onload" class="tsd-kind-icon">on<wbr>Load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="loaderstrategy.html#onloadall" class="tsd-kind-icon">on<wbr>Load<wbr>All</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="loaderstrategy.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="loaderstrategy.html#preload" class="tsd-kind-icon">preload</a></li>
 							</ul>
@@ -125,7 +126,7 @@
 					<div class="tsd-signature tsd-kind-icon">clientESM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = require.main &#x3D;&#x3D;&#x3D; undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/LoaderStrategy.ts#L15">src/lib/strategies/LoaderStrategy.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/LoaderStrategy.ts#L15">src/lib/strategies/LoaderStrategy.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -135,7 +136,7 @@
 					<div class="tsd-signature tsd-kind-icon">supported<wbr>Extensions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;.js&#x27;, &#x27;.cjs&#x27;, &#x27;.mjs&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/LoaderStrategy.ts#L16">src/lib/strategies/LoaderStrategy.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/LoaderStrategy.ts#L16">src/lib/strategies/LoaderStrategy.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,7 +154,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iloaderstrategy.html">ILoaderStrategy</a>.<a href="../interfaces/iloaderstrategy.html#filter">filter</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/LoaderStrategy.ts#L18">src/lib/strategies/LoaderStrategy.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/LoaderStrategy.ts#L18">src/lib/strategies/LoaderStrategy.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -177,7 +178,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iloaderstrategy.html">ILoaderStrategy</a>.<a href="../interfaces/iloaderstrategy.html#load">load</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/LoaderStrategy.ts#L45">src/lib/strategies/LoaderStrategy.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/LoaderStrategy.ts#L45">src/lib/strategies/LoaderStrategy.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -204,7 +205,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iloaderstrategy.html">ILoaderStrategy</a>.<a href="../interfaces/iloaderstrategy.html#onerror">onError</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/LoaderStrategy.ts#L76">src/lib/strategies/LoaderStrategy.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/LoaderStrategy.ts#L80">src/lib/strategies/LoaderStrategy.ts:80</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -221,16 +222,33 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="onpostload" class="tsd-anchor"></a>
-					<h3>on<wbr>Post<wbr>Load</h3>
+					<a name="onload" class="tsd-anchor"></a>
+					<h3>on<wbr>Load</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">on<wbr>Post<wbr>Load<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Load<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/LoaderStrategy.ts#L68">src/lib/strategies/LoaderStrategy.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/LoaderStrategy.ts#L68">src/lib/strategies/LoaderStrategy.ts:68</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onloadall" class="tsd-anchor"></a>
+					<h3>on<wbr>Load<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Load<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/LoaderStrategy.ts#L72">src/lib/strategies/LoaderStrategy.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
@@ -247,7 +265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/LoaderStrategy.ts#L72">src/lib/strategies/LoaderStrategy.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/LoaderStrategy.ts#L76">src/lib/strategies/LoaderStrategy.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
@@ -265,7 +283,7 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/iloaderstrategy.html">ILoaderStrategy</a>.<a href="../interfaces/iloaderstrategy.html#preload">preload</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f0eec9c/src/lib/strategies/LoaderStrategy.ts#L31">src/lib/strategies/LoaderStrategy.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/8c725d8/src/lib/strategies/LoaderStrategy.ts#L31">src/lib/strategies/LoaderStrategy.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -323,7 +341,10 @@
 								<a href="loaderstrategy.html#onerror" class="tsd-kind-icon">on<wbr>Error</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="loaderstrategy.html#onpostload" class="tsd-kind-icon">on<wbr>Post<wbr>Load</a>
+								<a href="loaderstrategy.html#onload" class="tsd-kind-icon">on<wbr>Load</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="loaderstrategy.html#onloadall" class="tsd-kind-icon">on<wbr>Load<wbr>All</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="loaderstrategy.html#onunload" class="tsd-kind-icon">on<wbr>Unload</a>
