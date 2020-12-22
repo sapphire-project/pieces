@@ -121,7 +121,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L68">src/lib/strategies/ILoaderStrategy.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f76f0b5/src/lib/strategies/ILoaderStrategy.ts#L68">src/lib/strategies/ILoaderStrategy.ts:68</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -131,8 +131,8 @@
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-comment">// ts-node support</span>
-<span class="hljs-keyword">class</span> MyStrategy <span class="hljs-keyword">extends</span> LoaderStrategy {
-  filter(path) {
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyStrategy</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">LoaderStrategy</span> </span>{
+  <span class="hljs-function"><span class="hljs-title">filter</span>(<span class="hljs-params">path</span>)</span> {
     <span class="hljs-keyword">const</span> extension = extname(path);
     <span class="hljs-keyword">if</span> (![<span class="hljs-string">&#x27;.js&#x27;</span>, <span class="hljs-string">&#x27;.ts&#x27;</span>].includes(extension)) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
     <span class="hljs-keyword">const</span> name = basename(path, extension);
@@ -166,7 +166,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L103">src/lib/strategies/ILoaderStrategy.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f76f0b5/src/lib/strategies/ILoaderStrategy.ts#L103">src/lib/strategies/ILoaderStrategy.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,8 +175,8 @@
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
-									<dd><pre><code class="language-typescript"><span class="hljs-keyword">class</span> MyStrategy <span class="hljs-keyword">extends</span> LoaderStrategy {
-  load(store, file) {
+									<dd><pre><code class="language-typescript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyStrategy</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">LoaderStrategy</span> </span>{
+  <span class="hljs-function"><span class="hljs-title">load</span>(<span class="hljs-params">store, file</span>)</span> {
     <span class="hljs-comment">// ...</span>
   }
 }</code></pre>
@@ -206,7 +206,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L121">src/lib/strategies/ILoaderStrategy.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f76f0b5/src/lib/strategies/ILoaderStrategy.ts#L121">src/lib/strategies/ILoaderStrategy.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -240,7 +240,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L109">src/lib/strategies/ILoaderStrategy.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f76f0b5/src/lib/strategies/ILoaderStrategy.ts#L109">src/lib/strategies/ILoaderStrategy.ts:109</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -274,7 +274,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L115">src/lib/strategies/ILoaderStrategy.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f76f0b5/src/lib/strategies/ILoaderStrategy.ts#L115">src/lib/strategies/ILoaderStrategy.ts:115</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -308,7 +308,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/792d68a/src/lib/strategies/ILoaderStrategy.ts#L91">src/lib/strategies/ILoaderStrategy.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/f76f0b5/src/lib/strategies/ILoaderStrategy.ts#L91">src/lib/strategies/ILoaderStrategy.ts:91</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -318,16 +318,16 @@
 								<dl class="tsd-comment-tags">
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-comment">// CommonJS support:</span>
-<span class="hljs-keyword">class</span> MyStrategy <span class="hljs-keyword">extends</span> LoaderStrategy {
-  preload(path) {
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyStrategy</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">LoaderStrategy</span> </span>{
+  <span class="hljs-function"><span class="hljs-title">preload</span>(<span class="hljs-params">path</span>)</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-built_in">require</span>(path);
   }
 }</code></pre>
 									</dd>
 									<dt>example</dt>
 									<dd><pre><code class="language-typescript"><span class="hljs-comment">// ESM support:</span>
-<span class="hljs-keyword">class</span> MyStrategy <span class="hljs-keyword">extends</span> LoaderStrategy {
-  preload(file) {
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyStrategy</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">LoaderStrategy</span> </span>{
+  <span class="hljs-function"><span class="hljs-title">preload</span>(<span class="hljs-params">file</span>)</span> {
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">import</span>(file.path);
   }
 }</code></pre>
