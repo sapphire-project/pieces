@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PieceOptions | @sapphire/pieces</title>
+	<title>StoreLogger | @sapphire/pieces</title>
 	<meta name="description" content="Documentation for @sapphire/pieces">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,10 +53,10 @@
 					<a href="../modules.html">@sapphire/pieces</a>
 				</li>
 				<li>
-					<a href="pieceoptions.html">PieceOptions</a>
+					<a href="storelogger.html">StoreLogger</a>
 				</li>
 			</ul>
-			<h1>Interface PieceOptions</h1>
+			<h1>Interface StoreLogger</h1>
 		</div>
 	</div>
 </header>
@@ -66,7 +66,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>The options for the <a href="../classes/piece.html">Piece</a>.</p>
+						<p>An interface representing a logger function.</p>
 					</div>
 				</div>
 			</section>
@@ -74,71 +74,45 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PieceOptions</span>
-						<ul class="tsd-hierarchy">
-							<li>
-								<a href="aliaspieceoptions.html" class="tsd-signature-type" data-tsd-kind="Interface">AliasPieceOptions</a>
-							</li>
-						</ul>
+						<span class="target">StoreLogger</span>
 					</li>
 				</ul>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Properties</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pieceoptions.html#enabled" class="tsd-kind-icon">enabled</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pieceoptions.html#name" class="tsd-kind-icon">name</a></li>
+			<section class="tsd-panel">
+				<h3 class="tsd-before-signature">Callable</h3>
+				<ul class="tsd-signatures tsd-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">Store<wbr>Logger<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/79a4f9e/src/lib/structures/Store.ts#L34">structures/Store.ts:34</a></li>
 							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="enabled" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> enabled</h3>
-					<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/79a4f9e/src/lib/structures/Piece.ts#L47">structures/Piece.ts:47</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether or not the piece should be enabled. If set to false, the piece will be unloaded.</p>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>An interface representing a logger function.</p>
+							</div>
 						</div>
-						<dl class="tsd-comment-tags">
-							<dt>default</dt>
-							<dd><p>true</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="name" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> name</h3>
-					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/sapphire-project/pieces/blob/79a4f9e/src/lib/structures/Piece.ts#L41">structures/Piece.ts:41</a></li>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>value: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The string to print. All strings will be formatted with the format <code>[STORE =&gt; ${name}] [${type}] ${content}</code>,
+									where the content may have identifiers (values or names of methods) surrounded by <code>&#39;</code>. For example:</p>
+									<ul>
+										<li><code>[STORE =&gt; commands] [LOAD] Skipped piece &#39;/home/user/bot/src/commands/foo.js&#39; as &#39;LoaderStrategy#filter&#39; returned &#39;null&#39;.</code></li>
+										<li><code>[STORE =&gt; commands] [INSERT] Unloaded new piece &#39;foo&#39; due to &#39;enabled&#39; being &#39;false&#39;.</code></li>
+										<li><code>[STORE =&gt; commands] [UNLOAD] Unloaded piece &#39;foo&#39;.</code></li>
+									</ul>
+								</div>
+							</li>
 						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The name for the piece.</p>
-						</div>
-						<dl class="tsd-comment-tags">
-							<dt>default</dt>
-							<dd><p>&#39;&#39;</p>
-							</dd>
-						</dl>
-					</div>
-				</section>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+					</li>
+				</ul>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -190,27 +164,19 @@
 					<li class=" tsd-kind-interface">
 						<a href="piececontextextras.html" class="tsd-kind-icon">Piece<wbr>Context<wbr>Extras</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface">
+					<li class=" tsd-kind-interface">
 						<a href="pieceoptions.html" class="tsd-kind-icon">Piece<wbr>Options</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pieceoptions.html#enabled" class="tsd-kind-icon">enabled</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="pieceoptions.html#name" class="tsd-kind-icon">name</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="rootdata.html" class="tsd-kind-icon">Root<wbr>Data</a>
 					</li>
-					<li class=" tsd-kind-interface">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
 						<a href="storelogger.html" class="tsd-kind-icon">Store<wbr>Logger</a>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="storeoptions.html" class="tsd-kind-icon">Store<wbr>Options</a>
 					</li>
