@@ -1,0 +1,530 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>LoaderStrategy | @sapphire/pieces</title>
+	<meta name="description" content="Documentation for @sapphire/pieces">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@sapphire/pieces</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">@sapphire/pieces</a>
+				</li>
+				<li>
+					<a href="LoaderStrategy.html">LoaderStrategy</a>
+				</li>
+			</ul>
+			<h1>Class LoaderStrategy&lt;T&gt;</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A multi-purpose feature-complete loader strategy supporting multi-piece modules as well as supporting both ECMAScript
+						Modules and CommonJS with reloading support.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T<span class="tsd-signature-symbol">: </span><a href="Piece.html" class="tsd-signature-type" data-tsd-kind="Class">Piece</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">LoaderStrategy</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/ILoaderStrategy.html" class="tsd-signature-type" data-tsd-kind="Interface">ILoaderStrategy</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter"><a href="LoaderStrategy.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="LoaderStrategy.html#clientUsesESModules" class="tsd-kind-icon">client<wbr>UsesESModules</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="LoaderStrategy.html#supportedExtensions" class="tsd-kind-icon">supported<wbr>Extensions</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="LoaderStrategy.html#filter" class="tsd-kind-icon">filter</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="LoaderStrategy.html#load" class="tsd-kind-icon">load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="LoaderStrategy.html#onError" class="tsd-kind-icon">on<wbr>Error</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="LoaderStrategy.html#onLoad" class="tsd-kind-icon">on<wbr>Load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="LoaderStrategy.html#onLoadAll" class="tsd-kind-icon">on<wbr>Load<wbr>All</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="LoaderStrategy.html#onUnload" class="tsd-kind-icon">on<wbr>Unload</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="LoaderStrategy.html#preload" class="tsd-kind-icon">preload</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Loader<wbr>Strategy&lt;T&gt;<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="LoaderStrategy.html" class="tsd-signature-type" data-tsd-kind="Class">LoaderStrategy</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L17">src/lib/strategies/LoaderStrategy.ts:17</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="Piece.html" class="tsd-signature-type" data-tsd-kind="Class">Piece</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="LoaderStrategy.html" class="tsd-signature-type" data-tsd-kind="Class">LoaderStrategy</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="clientUsesESModules" class="tsd-anchor"></a>
+					<h3>client<wbr>UsesESModules</h3>
+					<div class="tsd-signature tsd-kind-icon">client<wbr>UsesESModules<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L16">src/lib/strategies/LoaderStrategy.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="supportedExtensions" class="tsd-anchor"></a>
+					<h3>supported<wbr>Extensions</h3>
+					<div class="tsd-signature tsd-kind-icon">supported<wbr>Extensions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L17">src/lib/strategies/LoaderStrategy.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="filter" class="tsd-anchor"></a>
+					<h3>filter</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">filter<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#FilterResult" class="tsd-signature-type" data-tsd-kind="Type alias">FilterResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ILoaderStrategy.html">ILoaderStrategy</a>.<a href="../interfaces/ILoaderStrategy.html#filter">filter</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L33">src/lib/strategies/LoaderStrategy.ts:33</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves the name and the extension of the specified file path.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules.html#FilterResult" class="tsd-signature-type" data-tsd-kind="Type alias">FilterResult</a></h4>
+							<p>A <a href="../interfaces/ModuleData.html">ModuleData</a> on success, otherwise <code>null</code> to stop the store from processing the path.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="load" class="tsd-anchor"></a>
+					<h3>load</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>store<span class="tsd-signature-symbol">: </span><a href="Store.html" class="tsd-signature-type" data-tsd-kind="Class">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, file<span class="tsd-signature-symbol">: </span><a href="../interfaces/ModuleData.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#ILoaderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ILoaderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ILoaderStrategy.html">ILoaderStrategy</a>.<a href="../interfaces/ILoaderStrategy.html#load">load</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L60">src/lib/strategies/LoaderStrategy.ts:60</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The load hook, use this to override the loader.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>store: <a href="Store.html" class="tsd-signature-type" data-tsd-kind="Class">Store</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>file: <a href="../interfaces/ModuleData.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules.html#ILoaderResult" class="tsd-signature-type" data-tsd-kind="Type alias">ILoaderResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onError" class="tsd-anchor"></a>
+					<h3>on<wbr>Error</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Error<span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ILoaderStrategy.html">ILoaderStrategy</a>.<a href="../interfaces/ILoaderStrategy.html#onError">onError</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L95">src/lib/strategies/LoaderStrategy.ts:95</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>error: <span class="tsd-signature-type">Error</span></h5>
+								</li>
+								<li>
+									<h5>path: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onLoad" class="tsd-anchor"></a>
+					<h3>on<wbr>Load</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Load<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ILoaderStrategy.html">ILoaderStrategy</a>.<a href="../interfaces/ILoaderStrategy.html#onLoad">onLoad</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L83">src/lib/strategies/LoaderStrategy.ts:83</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called after a piece has been loaded, but before <a href="Piece.html#onLoad">Piece.onLoad</a> and {@link Store.set}.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onLoadAll" class="tsd-anchor"></a>
+					<h3>on<wbr>Load<wbr>All</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Load<wbr>All<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ILoaderStrategy.html">ILoaderStrategy</a>.<a href="../interfaces/ILoaderStrategy.html#onLoadAll">onLoadAll</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L87">src/lib/strategies/LoaderStrategy.ts:87</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called after all pieces have been loaded.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="onUnload" class="tsd-anchor"></a>
+					<h3>on<wbr>Unload</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Unload<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ILoaderStrategy.html">ILoaderStrategy</a>.<a href="../interfaces/ILoaderStrategy.html#onUnload">onUnload</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L91">src/lib/strategies/LoaderStrategy.ts:91</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called after a piece has been unloaded or overwritten by a newly loaded piece.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="preload" class="tsd-anchor"></a>
+					<h3>preload</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">preload<span class="tsd-signature-symbol">(</span>file<span class="tsd-signature-symbol">: </span><a href="../interfaces/ModuleData.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleData</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules.html#AsyncPreloadResult" class="tsd-signature-type" data-tsd-kind="Type alias">AsyncPreloadResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/ILoaderStrategy.html">ILoaderStrategy</a>.<a href="../interfaces/ILoaderStrategy.html#preload">preload</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/sapphiredev/pieces/blob/a4ad2b4/src/lib/strategies/LoaderStrategy.ts#L46">src/lib/strategies/LoaderStrategy.ts:46</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The pre-load hook, use this to override the loader.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>file: <a href="../interfaces/ModuleData.html" class="tsd-signature-type" data-tsd-kind="Interface">ModuleData</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules.html#AsyncPreloadResult" class="tsd-signature-type" data-tsd-kind="Type alias">AsyncPreloadResult</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/LoaderErrorType.html" class="tsd-kind-icon">Loader<wbr>Error<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="AliasPiece.html" class="tsd-kind-icon">Alias<wbr>Piece</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="AliasStore.html" class="tsd-kind-icon">Alias<wbr>Store</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="LoaderError.html" class="tsd-kind-icon">Loader<wbr>Error</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-has-type-parameter">
+						<a href="LoaderStrategy.html" class="tsd-kind-icon">Loader<wbr>Strategy</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="LoaderStrategy.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="LoaderStrategy.html#clientUsesESModules" class="tsd-kind-icon">client<wbr>UsesESModules</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="LoaderStrategy.html#supportedExtensions" class="tsd-kind-icon">supported<wbr>Extensions</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="LoaderStrategy.html#filter" class="tsd-kind-icon">filter</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="LoaderStrategy.html#load" class="tsd-kind-icon">load</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="LoaderStrategy.html#onError" class="tsd-kind-icon">on<wbr>Error</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="LoaderStrategy.html#onLoad" class="tsd-kind-icon">on<wbr>Load</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="LoaderStrategy.html#onLoadAll" class="tsd-kind-icon">on<wbr>Load<wbr>All</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="LoaderStrategy.html#onUnload" class="tsd-kind-icon">on<wbr>Unload</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="LoaderStrategy.html#preload" class="tsd-kind-icon">preload</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="MissingExportsError.html" class="tsd-kind-icon">Missing<wbr>Exports<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="Piece.html" class="tsd-kind-icon">Piece</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="Store.html" class="tsd-kind-icon">Store</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="StoreRegistry.html" class="tsd-kind-icon">Store<wbr>Registry</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/AliasPieceOptions.html" class="tsd-kind-icon">Alias<wbr>Piece<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/Container.html" class="tsd-kind-icon">Container</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/ILoaderStrategy.html" class="tsd-kind-icon">ILoader<wbr>Strategy</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ModuleData.html" class="tsd-kind-icon">Module<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/PieceContext.html" class="tsd-kind-icon">Piece<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/PieceOptions.html" class="tsd-kind-icon">Piece<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/RootData.html" class="tsd-kind-icon">Root<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/StoreLogger.html" class="tsd-kind-icon">Store<wbr>Logger</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/StoreOptions.html" class="tsd-kind-icon">Store<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/StoreRegistryEntries.html" class="tsd-kind-icon">Store<wbr>Registry<wbr>Entries</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../modules.html#AsyncPreloadResult" class="tsd-kind-icon">Async<wbr>Preload<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#FilterResult" class="tsd-kind-icon">Filter<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../modules.html#ILoaderResult" class="tsd-kind-icon">ILoader<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../modules.html#ILoaderResultEntry" class="tsd-kind-icon">ILoader<wbr>Result<wbr>Entry</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="../modules.html#PreloadResult" class="tsd-kind-icon">Preload<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../modules.html#container" class="tsd-kind-icon">container</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#getRootData" class="tsd-kind-icon">get<wbr>Root<wbr>Data</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
